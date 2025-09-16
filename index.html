@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Softket Technologies</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="SOFTKET LOG.png">
+</head>
+<body>
+  <div class="bak">
+<section class="bgi">
+<div class="navbar">
+  <div><img src="SOFTKET LOG.png"></div>
+    <div class="brand">Softket Technologies</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+        <a href="index.html">Home </a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contacts</a>
+    </div> 
+</div>
+
+
+    <h1>We build Apps, Websites & Brands that make impact</h1>
+    <h5>Softket Technologies delivers modern apps, user-friendly websites, creative graphics, and branding solutions.
+    </h5>
+
+    <a href="services.html" class="btn">Our Services</a>
+    <a href="contact.html" class="btn">Get a Quote</a>
+  </section>
+</div>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <h4> We also give back to the community through our school bursary program.</h4>
+    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+    <a href="#portfolio" class="btn btn-secondary">See Our Work</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>What We Do</h2>
+    <div class="services">
+      <div class="card">
+        <h3>App Development</h3>
+        <p>Custom Android & iOS apps designed for performance and great user experience.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Responsive websites, e-commerce stores, and web apps built with modern tools.</p>
+      </div>
+      <div class="card">
+        <h3>Graphics & Branding</h3>
+        <p>Logos, brand identity, and creative assets that set your business apart.</p>
+      </div>
+    </div>
+  </section>
+<!-- Portfolio -->
+  <section id="portfolio" style="background:#fff;">
+    <h2>Selected Work</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="placeholder-image1.jpg" alt="Project 1">
+        <div>
+          <h4>Ketdev Junior School App</h4>
+          <p>A student app that connects learners with tutors and resources.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="placeholder-image2.jpg" alt="Project 2">
+        <div>
+          <h4>Alfa Shop</h4>
+          <p>E-commerce redesign that improved conversions and user experience.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="SNACKS STICKERS.jpg" alt="Project 3">
+        <div>
+          <h4>Eliron Bakery Branding</h4>
+          <p>Complete visual identity and packaging for a local bakery chain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bursary -->
+  <section id="bursary">
+    <h2>School Bursary Program</h2>
+    <p>We support needy children  by offering bursaries, providing learning materials, and mentoring them to stay in school.</p>
+    <p>Lets Join The Power Together for helping the needy </p>
+  </section>
+<!-- Contact -->
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us about your project or to refer a child for bursary support.</p>
+    <form action="https://formspree.io/f/mjvndgve" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <h5>Quick Links</h5>
+    <div class="handle">
+        <a href="index.html">Home </a>  |  
+        <a href="about.html">About</a>  |  
+        <a href="services.html">Services</a>  |   
+        <a href="contact.html">Contacts</a>  
+    </div> 
+       <div class="handles"> <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | 
+        <a href="#">YouTube</a> | <a href="#">TikTok</a></div>
+    <p style="margin-top:20px; font-size:13px;">© <span id="year"></span> Softket Technologies — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+<script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+
+
+</body>
+</html>

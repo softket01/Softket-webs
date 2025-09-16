@@ -1,0 +1,215 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alfa Technologies — Apps • Websites • Graphics • Bursary</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #004aad; /* Blue */
+      color: white;
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    header nav a:hover {
+      color: #ff6a00; /* Orange */
+    }
+    .hero {
+      background: linear-gradient(135deg, #004aad, #ff6a00);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: white;
+      color: #004aad;
+    }
+    .btn-secondary {
+      border: 2px solid white;
+      color: white;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+}
+section h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #004aad;
+    }
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .portfolio img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+    .portfolio .card {
+      padding: 0;
+    }
+    .portfolio .card div {
+      padding: 15px;
+    }
+    footer {
+      background: #004aad;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    form button {
+      background: #ff6a00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #e65c00;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="SOFTKET LOG.png" alt="Logo" style="width:40px; height:40px; margin-right:10px; background:#fff; border-radius:50%;"> 
+      Softket Technologies
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#bursary">Bursary</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>We build Apps, Websites & Brands that make impact</h1>
+    <p>Alfa Technologies delivers modern apps, user-friendly websites, creative graphics, and branding solutions. We also give back to the community through our school bursary program.</p>
+    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+    <a href="#portfolio" class="btn btn-secondary">See Our Work</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>What We Do</h2>
+    <div class="services">
+      <div class="card">
+        <h3>App Development</h3>
+        <p>Custom Android & iOS apps designed for performance and great user experience.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Responsive websites, e-commerce stores, and web apps built with modern tools.</p>
+      </div>
+      <div class="card">
+        <h3>Graphics & Branding</h3>
+        <p>Logos, brand identity, and creative assets that set your business apart.</p>
+      </div>
+    </div>
+  </section>
+<!-- Portfolio -->
+  <section id="portfolio" style="background:#fff;">
+    <h2>Selected Work</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="placeholder-image1.jpg" alt="Project 1">
+        <div>
+          <h4>EduConnect App</h4>
+          <p>A student app that connects learners with tutors and resources.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="placeholder-image2.jpg" alt="Project 2">
+        <div>
+          <h4>Alfa Shop</h4>
+          <p>E-commerce redesign that improved conversions and user experience.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="placeholder-image3.jpg" alt="Project 3">
+        <div>
+          <h4>Kito Bakery Branding</h4>
+          <p>Complete visual identity and packaging for a local bakery chain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bursary -->
+  <section id="bursary">
+    <h2>School Bursary Program</h2>
+    <p>We support children in our community by offering bursaries, providing learning materials, and mentoring them to stay in school.</p>
+  </section>
+<!-- Contact -->
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us about your project or to refer a child for bursary support.</p>
+    <form action="https://formspree.io/f/mjvndgve" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:20px; font-size:13px;">© <span id="year"></span> Alfa Technologies — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

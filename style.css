@@ -1,0 +1,370 @@
+.bak{
+  background-color:#004aad;
+}
+body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    
+h1{
+  color: #e65c00;
+  position: relative;
+    z-index: 2;
+}
+
+h5{
+  color: #feffff;
+  position: relative;
+    z-index: 2;
+}
+
+h3{
+  color: #004aad;
+  position: relative;
+  z-index: 2;
+}
+ .hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+      position: relative;
+      z-index: 2;
+      color: #feffff;
+      
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: white;
+      color: #004aad;
+    }
+    .btn-secondary {
+      border: 2px solid white;
+      color: white;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+}
+section h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #004aad;
+      position: relative;
+      z-index: 2;
+    }
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .portfolio img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+    .portfolio .card {
+      padding: 0;
+    }
+    .portfolio .card div {
+      padding: 15px;
+    }
+    footer {
+      background: #004aad;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    form button {
+      background: #ff6a00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #e65c00;
+    }
+
+
+
+
+
+
+
+/* Navbar */
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+.bgi {
+    height:30em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 0%;
+}
+
+
+.bgi::before, .bgi::after{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height:30em;
+  background-size: cover;
+  background-position: center;
+  animation: slide 12s alternate-reverse infinite;
+  opacity: 0;
+}
+
+.bgi::before{
+  background-image:url("bgb.jpg") ;
+  animation-delay: 0s;
+}
+
+.bgi::after{
+  background-image:url("bgd.jpg") ;
+  animation-delay: 12s;
+}
+
+@keyframes slide {
+  0%{opacity: 1; transform:translatex(100%);}
+  20%{opacity: 1;  transform:translatex(0);}
+  100%{opacity: 1;  transform:translatex(0);}
+
+}
+
+
+
+
+
+
+.bgi h1 { font-size: 2.5rem;
+  z-index: 2;
+ }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+  }
+
+  img{
+    height: 100px;
+    width: 100px;
+    margin: 100 auto;
+    border-radius: 9px;
+    align-items: center;
+  }
+.photos img{
+  min-height: 400px;
+  height: 500px;
+    width: 500px;
+    margin: 100 auto;
+    border-radius: 9px;
+    align-items: center;
+    z-index: 2;
+
+}
+
+  /* brand */
+  .brand {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  /* Menu links */
+  .menu {
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+  }
+
+  .menu a {
+    color: rgb(59, 147, 248);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+  .menu a:hover {
+    background: #ff9800;
+  }
+
+  /* Hamburger icon */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  /* Mobile dropdown */
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background: #feffff;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      width: 150px;
+      border-radius: 5px;
+      padding: 10px 0;
+      z-index: 2;
+    }
+
+
+
+
+
+
+    .menu.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+
+
+h2{
+    color: #070047;
+    z-index: 2;
+    position: relative;
+    }
+
+  .hero {
+    background: linear-gradient(to right, #0a2540, #193b5c);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  .hero h1 { font-size: 2.5rem; }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .photos{
+    display: flex;
+    margin: 20px auto;
+    padding: 40px;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .containers {
+    width: 35em;
+    margin: 7px auto;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    min-height: 480px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+   
+  }
+
+  /* Content Box */
+  .container {
+    width: 80%;
+    margin: 10px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+
+h5{
+  text-align: center;
+  
+}
+
+
+.photos.ceo{
+  margin-left: 6em;
+  color: rgb(0, 140, 255);
+  text-align: left;
+  position: relative;
+}
+.handles a{
+  color: #feffff;
+  text-decoration: none;
+}
+
+.handles a :hover{
+  color: #ff9800;
+  background-color: #ff9800;
+}
+
+.handle a{
+  color:#ff9800;
+  text-decoration: none;
+}
+
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #0a3d62;
+    color: white;
+    margin-top: 2px;
+}

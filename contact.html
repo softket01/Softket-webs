@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Softket Technologies</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="SOFTKET LOG.png">
+
+</head>
+<body>
+
+  <div class="bak">
+  <section class="bgi">
+<div class="navbar">
+  <div><img src="SOFTKET LOG.png"></div>
+    <div class="brand">Softket Technologies</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+        <a href="index.html">Home </a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contacts</a>
+    </div> 
+</div> 
+    <h1> Get Connected With Us Now</h1>
+    <h5>We provide world-class Software Development, App Solutions, Networking, Branding, and Graphics Design.
+    </h5>
+    <a href="services.html" class="btn">Our Services</a>
+    <a href="contact.html" class="btn">Get a Quote</a>
+  </section>
+</div>
+
+<!-- Contact -->
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us about your project or to refer a child for bursary support.</p>
+    <form action="https://formspree.io/f/mjvndgve" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p>📍 Location: Kampala Uganda</p>
+<p>📞 Phone: +256 7510 8786</p>
+<p>📧 Email: softket01@gmail.com</p>
+    </form>
+    <h5>Quick Links</h5>
+    <div class="handle">
+        <a href="index.html">Home </a>  |  
+        <a href="about.html">About</a>  |  
+        <a href="services.html">Services</a>  |   
+        <a href="contact.html">Contacts</a>  
+    </div> 
+       <div class="handles"> <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | 
+        <a href="#">YouTube</a> | <a href="#">TikTok</a></div>
+    <p style="margin-top:20px; font-size:13px;">© <span id="year"></span> Softket Technologies — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+<script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
