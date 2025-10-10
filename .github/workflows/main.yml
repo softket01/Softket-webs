@@ -1,0 +1,22 @@
+name: 🚀 Deploy to ProFreeHost
+
+on:
+  push:
+    branches:
+      - main  # or master, depending on your branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Upload to FTP Server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_ezyro_40131538}}
+          password: ${{ secrets.FTP_cbfe4ddb86}}
+          server-dir: ${{ secrets.FTP_DIR }}
+          local-dir: https://softket01.github.io/Softket-webs/
