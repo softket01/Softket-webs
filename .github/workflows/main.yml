@@ -19,4 +19,4 @@ jobs:
           username: ${{ secrets.FTP_ezyro_40131538}}
           password: ${{ secrets.FTP_cbfe4ddb86}}
           server-dir: ${{ secrets.FTP_DIR }}
-          local-dir: https://softket01.github.io/Softket-webs/
+          local-dir: ./
