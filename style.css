@@ -2,10 +2,10 @@
   background-color:#004aad;
 }
 .ordernavbar{
-background: linear-gradient(to right, #0a2540, #193b5c)
-    max-width: 1200px;
-    margin: auto;
-    height :20px;
+background-color:#020011;
+    max-width: 100%;
+    margin:0,auto;
+    height :10em;
 }
 body {
       margin: 0;
@@ -375,5 +375,6 @@ h5{
     margin-top: 2px;
 
 }
+
 
 
