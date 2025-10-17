@@ -1,7 +1,7 @@
 .bak{
   background-color:#004aad;
 }
-.ordernav{
+.ordernavbar{
 background: linear-gradient(to right, #0a2540, #193b5c)
     max-width: 1200px;
     margin: auto;
@@ -375,4 +375,5 @@ h5{
     margin-top: 2px;
 
 }
+
 
