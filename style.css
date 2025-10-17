@@ -118,6 +118,12 @@ section h2 {
 
 /* Navbar */
 .navbar {
+    background: linear-gradient(to right, #0a2540, #193b5c);
+    color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    height :20px;
+  
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -367,4 +373,5 @@ h5{
     background: #0a3d62;
     color: white;
     margin-top: 2px;
+
 }
